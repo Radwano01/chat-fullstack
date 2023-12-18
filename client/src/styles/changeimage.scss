@@ -1,0 +1,24 @@
+.changeimage{
+   margin: 20px; 
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+
+        input{
+            margin: 5px 0;
+        }
+
+        button{
+            background-color:#E7EAEF;
+            color: #217074;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 7px 7px;
+            font-size: 17px;
+        }
+    }
+}

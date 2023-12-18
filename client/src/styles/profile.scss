@@ -1,0 +1,48 @@
+.profile{
+    background-color: #E7EAEF;
+    color: #217074;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .left{
+        img{
+            height: 400px;
+            width: 380px;
+        }
+    }
+
+    .right{
+        background-color: #217074;
+        color: #E7EAEF;
+        padding: 20px 100px 20px 10px;
+        border: none;
+        border-radius: 10px;
+        h2{
+            margin: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:1024px){
+    .profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .left{
+            img{
+                height: 250px;
+                width: 200px;
+            }
+        }
+
+        .right{
+            width: 40%;
+        }
+    }
+}

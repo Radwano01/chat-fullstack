@@ -1,0 +1,16 @@
+.footer{
+    background-color: #217074;
+    color: #E7EAEF;
+    z-index: 2;
+    overflow: hidden;
+    height: 100%;
+    .text{
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+}

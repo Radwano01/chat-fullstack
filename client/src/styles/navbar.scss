@@ -1,0 +1,104 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #217074;
+    .left{
+        padding: 40px;
+
+        a{        
+            background-color: white;
+            color: #217074;
+            border-radius: 10px;
+            margin: 10px;
+            text-decoration: none;
+            font-size: 30px;
+            box-shadow: 3px 3px 3px 3px white;
+            transition: 0.3s;
+        }
+        a:hover{
+            color: white;
+            background-color: #217074;
+        }
+    }
+
+    .right {
+        padding: 40px;
+        
+        a {
+            margin: 10px;
+            text-decoration: none;
+            color: #E7EAEF;
+            font-size: 25px;
+            font-weight: 900;
+            position: relative;
+    
+            &::before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background-color: #E7EAEF;
+                bottom: 0;
+                left: 0;
+                transition: width 0.3s ease;
+            }
+    
+            &:hover::before {
+                width: 100%;
+            }
+        }
+
+        .nav-btn{
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            outline: none;
+            display: none;
+            opacity: 0;
+        }
+    }
+    
+}
+
+@media screen and (max-width:1024px){
+    .navbar{
+        .right{
+            .nav-btn{
+                display: flex;
+                opacity: 1;
+            }
+            .nav-btn.bar{
+                margin-right: 10px;
+            }
+            ul{
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 1.5rem;
+                background-color: #217074;
+                color: white;
+                transition: 1s;
+                transform: translateY(-110vh);
+                li{
+                    a{
+                        color: white;
+                    }
+                    h2{
+                        color: white;
+                    }
+                }
+            }
+            .responsive-nav{
+                transform: none;
+            }
+        }
+    }
+}
